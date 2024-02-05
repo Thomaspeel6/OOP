@@ -6,7 +6,7 @@ class MilesTokm {
 
         double miles, km;
 
-        System.out.println(;"Enter miles: ");
+        System.out.print("Enter miles: ");
 
         miles = scanner.nextDouble();
 
