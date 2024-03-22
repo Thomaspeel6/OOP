@@ -1,0 +1,47 @@
+import java.util.LinkedList;
+import java.util.List;
+
+// TODO: Implement the BaccaratHand class in the file
+
+
+public class BaccaratHand {
+    
+    private List<BaccaratCard> baccaratHand;
+
+    public BaccaratHand() {
+        baccaratHand = new LinkedList<>();
+    }
+
+    public int size() {
+        return baccaratHand.size();
+    }
+    
+    public void add(BaccaratCard baccaratCard) {
+        baccaratHand.add(baccaratCard);
+        
+    }
+    
+    public int value() {
+        int sum = 0;
+        for (BaccaratCard baccaratCard: baccaratHand) {
+            sum += baccaratCard.value();
+        }
+        return sum;
+    }
+    
+    public boolean isNatural() {
+        if (value() == 8 || value() == 9 && size() == 2){
+            return true;
+        }
+        return false;
+    }
+    
+
+    public String toString() {
+        String str = "";
+        for (BaccaratCard baccaratCard: baccaratHand) {
+            str += baccaratCard.toString() + " ";
+        }
+        return str;
+    }
+}
