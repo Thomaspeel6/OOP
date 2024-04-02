@@ -4,22 +4,14 @@ import java.util.List;
 // TODO: Implement the BaccaratHand class in the file
 
 
-public class BaccaratHand {
+public class BaccaratHand extends CardCollection {
     
     private List<BaccaratCard> baccaratHand;
 
     public BaccaratHand() {
         baccaratHand = new LinkedList<>();
     }
-
-    public int size() {
-        return baccaratHand.size();
-    }
     
-    public void add(BaccaratCard baccaratCard) {
-        baccaratHand.add(baccaratCard);
-        
-    }
     
     public int value() {
         int sum = 0;

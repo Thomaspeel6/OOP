@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.LinkedList;
 
-public class Shoe{
+public class Shoe extends CardCollection{
 
     private List<BaccaratCard> baccaratCards;
     private int numDecks;
@@ -12,13 +12,15 @@ public class Shoe{
         if(numDecks != 6 || numDecks != 8){
             throw new CardException("Number of decks must be 6 or 8");
         }
-        this.numDecks = numDecks;
-        baccaratCards = new LinkedList<>();
-        for(int i = 0; i < numDecks; i++){
-            for(int j = 1; j <= 52; j++){ 
-                for(Card.Suit suit: Card.Suit.values()){
-                    for(Card.Rank rank: Card.Rank.values()){
-                        baccaratCards.add(new BaccaratCard(rank, suit));
+        else { 
+            this.numDecks = numDecks;
+            baccaratCards = new LinkedList<>();
+            for(int i = 0; i < numDecks; i++){
+                for(int j = 1; j <= 52; j++){ 
+                    for(Card.Suit suit: Card.Suit.values()){
+                        for(Card.Rank rank: Card.Rank.values()){
+                            baccaratCards.add(new BaccaratCard(rank, suit));
+                        }
                     }
                 }
             }
