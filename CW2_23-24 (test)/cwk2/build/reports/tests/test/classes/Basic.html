@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">15</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.074s</div>
+<div class="counter">0.062s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,211 +61,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="addingCardsToHand()"></a>
-<h3 class="failures">Cards added to hand correctly</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="cardComparison()"></a>
-<h3 class="failures">BaccaratCard objects can be compared &amp; ordered</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="cardCreation()"></a>
-<h3 class="failures">BaccaratCard objects are created properly</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="cardEquality()"></a>
-<h3 class="failures">BaccaratCard objects can be tested for equality</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="cardStringRepresentation()"></a>
-<h3 class="failures">BaccaratCard has the correct string representation</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="cardValue()"></a>
-<h3 class="failures">BaccaratCard values are computed correctly</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="dealFromEmptyShoeException()"></a>
-<h3 class="failures">CardException when dealing from empty shoe</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="dealFromShoe()"></a>
-<h3 class="failures">Cards dealt correctly from unshuffled Shoe</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="emptyHandCreation()"></a>
-<h3 class="failures">Empty hand created correctly</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="handStringRepresentation()"></a>
-<h3 class="failures">BaccaratHand has the correct string representation</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="handValue()"></a>
-<h3 class="failures">BaccaratHand values computed correctly</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="naturalHand()"></a>
-<h3 class="failures">Correct detection of whether a BaccaratHand is a 'natural'</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="shoeCreation()"></a>
-<h3 class="failures">Shoes are created with the correct numbers of cards</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="shoeCreationException()"></a>
-<h3 class="failures">CardException when creating a Shoe with wrong number of decks</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="shuffle()"></a>
-<h3 class="failures">Shoe can be shuffled</h3>
-<span class="code">
-<pre>CardException: Number of decks must be 6 or 8
-	at app//Shoe.&lt;init&gt;(Shoe.java:13)
-	at app//Basic.perTestSetup(Basic.java:55)
-	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -277,94 +76,94 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">Cards added to hand correctly</td>
-<td class="failures">addingCardsToHand()</td>
-<td class="failures">0.001s</td>
-<td class="failures">failed</td>
+<td class="success">Cards added to hand correctly</td>
+<td class="success">addingCardsToHand()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">BaccaratCard objects can be compared &amp; ordered</td>
-<td class="failures">cardComparison()</td>
-<td class="failures">0.009s</td>
-<td class="failures">failed</td>
+<td class="success">BaccaratCard objects can be compared &amp; ordered</td>
+<td class="success">cardComparison()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">BaccaratCard objects are created properly</td>
-<td class="failures">cardCreation()</td>
-<td class="failures">0.040s</td>
-<td class="failures">failed</td>
+<td class="success">BaccaratCard objects are created properly</td>
+<td class="success">cardCreation()</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">BaccaratCard objects can be tested for equality</td>
-<td class="failures">cardEquality()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">BaccaratCard objects can be tested for equality</td>
+<td class="success">cardEquality()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">BaccaratCard has the correct string representation</td>
-<td class="failures">cardStringRepresentation()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">BaccaratCard has the correct string representation</td>
+<td class="success">cardStringRepresentation()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">BaccaratCard values are computed correctly</td>
-<td class="failures">cardValue()</td>
-<td class="failures">0.001s</td>
-<td class="failures">failed</td>
+<td class="success">BaccaratCard values are computed correctly</td>
+<td class="success">cardValue()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">CardException when dealing from empty shoe</td>
-<td class="failures">dealFromEmptyShoeException()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">CardException when dealing from empty shoe</td>
+<td class="success">dealFromEmptyShoeException()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Cards dealt correctly from unshuffled Shoe</td>
-<td class="failures">dealFromShoe()</td>
-<td class="failures">0.003s</td>
-<td class="failures">failed</td>
+<td class="success">Cards dealt correctly from unshuffled Shoe</td>
+<td class="success">dealFromShoe()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Empty hand created correctly</td>
-<td class="failures">emptyHandCreation()</td>
-<td class="failures">0.001s</td>
-<td class="failures">failed</td>
+<td class="success">Empty hand created correctly</td>
+<td class="success">emptyHandCreation()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">BaccaratHand has the correct string representation</td>
-<td class="failures">handStringRepresentation()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">BaccaratHand has the correct string representation</td>
+<td class="success">handStringRepresentation()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">BaccaratHand values computed correctly</td>
-<td class="failures">handValue()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">BaccaratHand values computed correctly</td>
+<td class="success">handValue()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Correct detection of whether a BaccaratHand is a 'natural'</td>
-<td class="failures">naturalHand()</td>
-<td class="failures">0.001s</td>
-<td class="failures">failed</td>
+<td class="success">Correct detection of whether a BaccaratHand is a 'natural'</td>
+<td class="success">naturalHand()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Shoes are created with the correct numbers of cards</td>
-<td class="failures">shoeCreation()</td>
-<td class="failures">0.001s</td>
-<td class="failures">failed</td>
+<td class="success">Shoes are created with the correct numbers of cards</td>
+<td class="success">shoeCreation()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">CardException when creating a Shoe with wrong number of decks</td>
-<td class="failures">shoeCreationException()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">CardException when creating a Shoe with wrong number of decks</td>
+<td class="success">shoeCreationException()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Shoe can be shuffled</td>
-<td class="failures">shuffle()</td>
-<td class="failures">0.005s</td>
-<td class="failures">failed</td>
+<td class="success">Shoe can be shuffled</td>
+<td class="success">shuffle()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
@@ -376,7 +175,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.6</a> at Mar 28, 2024, 5:24:15 PM</p>
+<a href="http://www.gradle.org">Gradle 8.6</a> at Apr 8, 2024, 12:22:26 PM</p>
 </div>
 </div>
 </body>
