@@ -4,11 +4,16 @@ import java.util.Scanner;
 
 class Input {
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-
-    System.out.print("Enter an integer value: ");
-    int n = input.nextInt();
-
-    System.out.println("n = " + n);
+    boolean anotherRound = true;
+    while (anotherRound) {
+      
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.printf("Another round? (y/n): ");
+    String response = scanner.nextLine().toLowerCase();
+    if (response.equals("n")) {
+        anotherRound = false;
+    }
+  }
   }
 }

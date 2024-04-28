@@ -1,16 +1,12 @@
 
 import java.util.Collections;
-import java.util.List;
-import java.util.LinkedList;
+
 
 public class Shoe extends CardCollection{
-
-    private int numDecks;
-    private final int deckSize = 52;
-
+    private int numOfDecks;
     public Shoe (int numDecks){
         super();
-        this.numDecks = numDecks;
+        this.numOfDecks = numDecks;
         if (numDecks == 6 || numDecks == 8){
             for (int i = 0; i < numDecks; i++){
                 for (Card.Suit suit: Card.Suit.values()){

@@ -1,8 +1,3 @@
-import java.util.LinkedList;
-import java.util.List;
-
-// TODO: Implement the BaccaratHand class in the file
-
 
 public class BaccaratHand extends CardCollection {
 
@@ -32,8 +27,11 @@ public class BaccaratHand extends CardCollection {
         String handString = "";
         for (Card card: cards ) {
 
-            handString += (card.toString());
-            // Add a space between cards only if its not hte last card so there is not a trailing space
+            handString += card.toString();
+            /*
+            Add a space between cards only if its not hte last
+            card so there is not a trailing space
+             */
             if (cards.indexOf(card) != cards.size() - 1) {
                 handString += " ";
             }
